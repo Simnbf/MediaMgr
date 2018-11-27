@@ -2,9 +2,9 @@ package com.sbf.MediaManager;
 
 import java.io.File;
 import java.io.IOException;
-
+import java.io.UnsupportedEncodingException;
 import java.net.InetAddress;
-
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +20,8 @@ public class App {
 		String parmFile = args[0];
 		List<String> parameters = new ArrayList<String>();
 		LOG.info("Starting up.");
+		
+		// Never do this. It's fine in C but it's not a Java standard
 		String nasIP = "", landingArea = "", mountPoint = "";
 		try {
 			parameters = GetParams.ReadParams(parmFile);
@@ -50,6 +52,7 @@ public class App {
 					int mediaType = findMediaType(filesFound.get(x));
 					if (mediaType > 0) {
 						String target = mountPoint + "/" + parameters.get(mediaType);
+						// Can just use Files.copy(from, to);
 						copyFilesToTarget(landingArea, filesFound.get(x).toString(), target);
 					}
 				}
@@ -79,6 +82,11 @@ public class App {
 		// substring up to it		
 		if (titlename.contains("S0")) {
 			titlename = titlename.substring(0, titlename.indexOf("S0")).replace(".", " ").trim().replace(" ", "%20");
+			try {
+				titlename = URLEncoder.encode(titlename, "UTF-8");
+			} catch (UnsupportedEncodingException e) {
+				LOG.error(e.getMessage(), e);
+			}
 			// Invoke TVDB API to see if it is a TV show
 			try {
 				if (TVDBApi.searchShows(titlename)) {
@@ -100,6 +108,11 @@ public class App {
 			LOG.info(titlename + " Is a movie");
 			return 5;
 		}
+		/*
+		 * You should only really have one exit point for a method
+		 * if you set a int result object and where you return you should set that
+		 * and then return it here.
+		 */
 		return 99;	// never executed but Java wants it
 	}
 

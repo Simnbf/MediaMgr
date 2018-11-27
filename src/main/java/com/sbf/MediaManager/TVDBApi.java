@@ -1,21 +1,21 @@
 package com.sbf.MediaManager;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.json.*;
+import java.net.URLDecoder;
 
 import javax.net.ssl.HttpsURLConnection;
+
+import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class TVDBApi {
 	public static final Logger LOG = LoggerFactory.getLogger(TVDBApi.class);
@@ -51,7 +51,8 @@ public class TVDBApi {
 			return true;
 		}
 		if (httpStatus == 404) {
-			LOG.info(searchTitle.replace("%20",  " ") + " Not found on TVDB");
+			searchTitle = URLDecoder.decode(searchTitle, "UTF-8");
+			LOG.info(searchTitle + " Not found on TVDB");
 			con.disconnect();
 			return false;
 		}
@@ -72,10 +73,6 @@ public class TVDBApi {
 			return jwt;
 		}
 		
-		List<String> parameters = new ArrayList<String>();
-		parameters = GetParams.ReadParams("TVDBlogin.txt");
-		
-
 		HttpsURLConnection con;
 //		LOG.info(url.toString());
 		con = (HttpsURLConnection) url.openConnection();
@@ -83,20 +80,19 @@ public class TVDBApi {
 		con.setRequestProperty("Content-type", "application/json");
 		con.setDoOutput(true);
 		con.setDoInput(true);
-
-		JSONObject obj = new JSONObject();
-		obj.put("apikey", parameters.get(0)); 
-		obj.put("userkey", parameters.get(1)); 
-		obj.put("username", parameters.get(2));
-		String jwtPOST = obj.toString();
-
-		OutputStream ostream = con.getOutputStream();
-		OutputStreamWriter osw = new OutputStreamWriter(ostream, "UTF-8");
-		osw.write(jwtPOST);
-		osw.flush();
-		osw.close();
-		ostream.close();
-
+		
+		// Created JSON file
+		File json = new File("TVDBlogin.json");
+		
+		try (InputStream is = new FileInputStream(json)) {
+			try(OutputStream ostream = con.getOutputStream()) {
+				// Straight pipe from file to output stream
+				inToOut(is, ostream);
+				// always flush after use
+				ostream.flush();
+			}
+		}
+		
 		int httpStatus = con.getResponseCode();
 
 		if (httpStatus < 200 && httpStatus > 300) {
@@ -104,18 +100,42 @@ public class TVDBApi {
 			return jwt;
 		}
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream()));
 		StringBuilder sb = new StringBuilder();
-		String postPayload;
-		while ((postPayload = br.readLine()) != null) {
-			sb.append(postPayload + "\n");
-		}
-		br.close();
 
+		/* This is called a try with resources, when using resources that need to be closed instead of
+		 * having to have a try catch around this and then a finally in order to ensure its closed
+		 * you can just do try(ObjectThatNeedsToClose instance = getInstance)
+		 * and it will automatically close it even if it throws an exception during processing
+		 */
+		try (BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream()))){
+			String postPayload;
+			while ((postPayload = br.readLine()) != null) {
+				sb.append(postPayload + "\n");
+			}
+		}
+
+		
+		
 		JSONObject tokenData = new JSONObject(sb.toString());
 		jwt = tokenData.getString("token");
 		con.disconnect();
 		return jwt;
+	}
+	
+	/**
+	 * Super simple get byte from {@code is} and write it to {@code os} holds nothing in memory
+	 * @param is
+	 * @param os
+	 * @throws IOException
+	 */
+	private static void inToOut(final InputStream is, final OutputStream os) throws IOException {
+		byte[] bytes;
+		while (is.available() > 0) {
+			bytes = new byte[1];
+			is.read(bytes);
+			os.write(bytes);
+		}
+		
 	}
 
 }
