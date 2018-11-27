@@ -14,7 +14,8 @@ import org.slf4j.LoggerFactory;
 public class GetParams {
 	private static final Logger LOG = LoggerFactory.getLogger(GetParams.class);
 	public static List<String> ReadParams(String parm) throws IOException{
-		LOG.info("in GetParams class");	
+//		LOG.info("in GetParams class");
+		LOG.info("Reading " + parm + " file");
 		File file = new File(parm);
 		List<String> parmOutput = FileUtils.readLines(file, "ASCII");
 		return parmOutput;

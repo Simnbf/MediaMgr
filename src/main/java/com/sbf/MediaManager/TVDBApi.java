@@ -10,12 +10,15 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.json.*;
 
 import javax.net.ssl.HttpsURLConnection;
 
 public class TVDBApi {
-	public static final Logger LOG = LoggerFactory.getLogger(App.class);
+	public static final Logger LOG = LoggerFactory.getLogger(TVDBApi.class);
 
 	public static boolean searchShows(String searchTitle) throws IOException {
 
@@ -35,7 +38,7 @@ public class TVDBApi {
 		}
 
 		HttpsURLConnection con;
-		LOG.info(url.toString());
+//		LOG.info(url.toString());
 		con = (HttpsURLConnection) url.openConnection();
 		con.setRequestMethod("GET");
 		String bearer = "Bearer " + jwt;
@@ -47,7 +50,11 @@ public class TVDBApi {
 			con.disconnect();
 			return true;
 		}
-
+		if (httpStatus == 404) {
+			LOG.info(searchTitle.replace("%20",  " ") + " Not found on TVDB");
+			con.disconnect();
+			return false;
+		}
 		// if (httpStatus < 200 && httpStatus > 300) {
 		LOG.info("Bad HTTP Status on login POST: " + httpStatus);
 		con.disconnect();
@@ -64,9 +71,13 @@ public class TVDBApi {
 			e.printStackTrace();
 			return jwt;
 		}
+		
+		List<String> parameters = new ArrayList<String>();
+		parameters = GetParams.ReadParams("TVDBlogin.txt");
+		
 
 		HttpsURLConnection con;
-		LOG.info(url.toString());
+//		LOG.info(url.toString());
 		con = (HttpsURLConnection) url.openConnection();
 		con.setRequestMethod("POST");
 		con.setRequestProperty("Content-type", "application/json");
@@ -74,9 +85,9 @@ public class TVDBApi {
 		con.setDoInput(true);
 
 		JSONObject obj = new JSONObject();
-		obj.put("apikey", "RFZ6H3EVTU0RPXBO");
-		obj.put("userkey", "101ZWS9B3ZKSIXHD");
-		obj.put("username", "simnbf7gu");
+		obj.put("apikey", parameters.get(0)); 
+		obj.put("userkey", parameters.get(1)); 
+		obj.put("username", parameters.get(2));
 		String jwtPOST = obj.toString();
 
 		OutputStream ostream = con.getOutputStream();

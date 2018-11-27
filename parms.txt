@@ -2,5 +2,5 @@
 192.168.1.102
 /home/sbf/nas
 LandingArea
-Torrent/Television
-Torrent/Movies
+Television
+Movies
