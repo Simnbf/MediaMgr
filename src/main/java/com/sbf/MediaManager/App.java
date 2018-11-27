@@ -107,7 +107,7 @@ public class App {
 
 		File inFile = new File(file2Copy);
 		// Tell JVM to delete everything in from directory when we end
-		inFile.deleteOnExit();
+//		inFile.deleteOnExit();
 		// Get the file name, going to see if there's a dir setup for this media in target
 		String mediaName = inFile.getName();
 		try {
@@ -121,14 +121,14 @@ public class App {
 
 		LOG.info("Copying " + mediaName + " to " + target.toString());		
 				
-		try {
-			FileUtils.copyFile(inFile, target);
+/*		try {
+			FileUtils.moveFile(inFile, target);
 			return;			
 		} catch (FileExistsException e) {
 			LOG.info("File in landing area already exists in target - should delete in future");
-			e.printStackTrace();
+			LOG.error("FileExistsException");
 
-		}
+		}*/
 		return;
 	}
 }
