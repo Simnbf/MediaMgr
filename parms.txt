@@ -4,3 +4,4 @@
 LandingArea
 Television
 Movies
+logs/

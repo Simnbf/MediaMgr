@@ -47,8 +47,12 @@ public class TVDBApi {
 		int httpStatus = con.getResponseCode();
 
 		if (httpStatus == 200) {
+			if (App.verbose) {
+				LOG.info(searchTitle + " Found on TVDB");
+			}
 			con.disconnect();
 			return true;
+			
 		}
 		if (httpStatus == 404) {
 			searchTitle = URLDecoder.decode(searchTitle, "UTF-8");
@@ -57,7 +61,7 @@ public class TVDBApi {
 			return false;
 		}
 		// if (httpStatus < 200 && httpStatus > 300) {
-		LOG.info("Bad HTTP Status on login POST: " + httpStatus);
+		LOG.info("Bad HTTP Status on TVDB GET API: " + httpStatus);
 		con.disconnect();
 		return false;
 
