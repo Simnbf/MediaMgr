@@ -61,7 +61,7 @@ public class TVDBApi {
 			return false;
 		}
 		// if (httpStatus < 200 && httpStatus > 300) {
-		LOG.info("Bad HTTP Status on TVDB GET API: " + httpStatus);
+		LOG.info("Bad HTTP Status on TVDB GET API: " + httpStatus + " " + con.getResponseMessage());
 		con.disconnect();
 		return false;
 

@@ -4,7 +4,7 @@
   <groupId>com.sbf</groupId>
   <artifactId>MediaManager</artifactId>
   <name>MediaManager</name>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   <url>http://maven.apache.org</url>
   <build>
     <plugins>
