@@ -157,12 +157,12 @@ public class App {
 		File target = new File(file2Copy.replace(baseFrom, targetDir));
 
 		
-/*		try {
+		try {
 			FileUtils.moveFile(inFile, target);
 		} catch (FileExistsException e) {
 			LOG.info("File in landing area already exists in target - should delete in future");
 			LOG.error("FileExistsException");
-		}*/
+		}
 
 		LOG.info("Copied " + mediaName + " to " + target.toString());
 

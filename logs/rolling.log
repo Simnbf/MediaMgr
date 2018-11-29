@@ -49,4 +49,78 @@
  2018-11-29 22:29:23 INFO  - FRESH MEAT Is a TV show
  2018-11-29 22:29:23 INFO  - Copied fresh.meat.s04e04.hdtv.x264-tla[ettv] to /home/sbf/nas/Television/fresh.meat.s04e04.hdtv.x264-tla[ettv]/Fresh.Meat.S04E04.HDTV.x264-TLA[ettv]/fresh.meat.s04e04.hdtv.x264-tla[ettv].mp4
  2018-11-29 22:29:23 INFO  - --------------------
+ 2018-11-29 22:37:31 INFO  - --------------------
+ 2018-11-29 22:37:31 INFO  - Starting up.
+ 2018-11-29 22:37:31 INFO  - Reading parms.txt file
+ 2018-11-29 22:37:31 INFO  - Successfully ping'd NAS
+ 2018-11-29 22:37:31 INFO  - Bad HTTP Status on TVDB GET API: 401 Unauthorized
+ 2018-11-29 22:37:31 INFO  - Copied fresh.meat.s04e04.hdtv.x264-tla[ettv] to /home/sbf/nas/Movies/fresh.meat.s04e04.hdtv.x264-tla[ettv]/Fresh.Meat.S04E04.HDTV.x264-TLA[ettv]/fresh.meat.s04e04.hdtv.x264-tla[ettv].mp4
+ 2018-11-29 22:37:31 INFO  - --------------------
+ 2018-11-29 22:37:56 INFO  - --------------------
+ 2018-11-29 22:37:56 INFO  - Starting up.
+ 2018-11-29 22:37:56 INFO  - Reading parms.txt file
+ 2018-11-29 22:37:56 INFO  - Successfully ping'd NAS
+ 2018-11-29 22:37:56 INFO  - Bad HTTP Status on TVDB GET API: 401 Unauthorized
+ 2018-11-29 22:37:56 INFO  - Copied fresh.meat.s04e04.hdtv.x264-tla[ettv] to /home/sbf/nas/Movies/fresh.meat.s04e04.hdtv.x264-tla[ettv]/Fresh.Meat.S04E04.HDTV.x264-TLA[ettv]/fresh.meat.s04e04.hdtv.x264-tla[ettv].mp4
+ 2018-11-29 22:37:56 INFO  - --------------------
+ 2018-11-29 22:38:15 INFO  - --------------------
+ 2018-11-29 22:38:15 INFO  - Starting up.
+ 2018-11-29 22:38:15 INFO  - Reading parms.txt file
+ 2018-11-29 22:38:15 INFO  - Successfully ping'd NAS
+ 2018-11-29 22:38:15 INFO  - FRESH MEAT Is a TV show
+ 2018-11-29 22:38:15 INFO  - Copied fresh.meat.s04e04.hdtv.x264-tla[ettv] to /home/sbf/nas/Television/fresh.meat.s04e04.hdtv.x264-tla[ettv]/Fresh.Meat.S04E04.HDTV.x264-TLA[ettv]/fresh.meat.s04e04.hdtv.x264-tla[ettv].mp4
+ 2018-11-29 22:38:15 INFO  - --------------------
+ 2018-11-29 23:01:33 INFO  - --------------------
+ 2018-11-29 23:01:33 INFO  - Starting up.
+ 2018-11-29 23:01:33 INFO  - Reading parms.txt file
+ 2018-11-29 23:01:33 INFO  - Successfully ping'd NAS
+ 2018-11-29 23:01:34 INFO  - FRESH MEAT Is a TV show
+ 2018-11-29 23:01:41 INFO  - Copied fresh.meat.s04e04.hdtv.x264-tla[ettv] to /home/sbf/nas/Torrent/Television/fresh.meat.s04e04.hdtv.x264-tla[ettv]/Fresh.Meat.S04E04.HDTV.x264-TLA[ettv]/fresh.meat.s04e04.hdtv.x264-tla[ettv].mp4
+ 2018-11-29 23:01:41 INFO  - Defaulting THE.WOLF.OF.WALL.STREET.2013.1080P.BLURAY.X264.YIFY.MP4 to a movie
+ 2018-11-29 23:02:44 INFO  - Copied The.Wolf.of.Wall.Street.2013.1080p.BluRay.x264.YIFY to /home/sbf/nas/Torrent/Movies/The.Wolf.of.Wall.Street.2013.1080p.BluRay.x264.YIFY/The Wolf of Wall Street (2013) [1080p]/The.Wolf.of.Wall.Street.2013.1080p.BluRay.x264.YIFY.mp4
+ 2018-11-29 23:02:44 INFO  - Defaulting THIS.IS.40.UNRATED.2012.720P.BRRIP.X264.BOKUTOX.YIFY.MP4 to a movie
+ 2018-11-29 23:03:13 INFO  - Copied This.Is.40.UNRATED.2012.720p.BrRip.x264.BOKUTOX.YIFY to /home/sbf/nas/Torrent/Movies/This.Is.40.UNRATED.2012.720p.BrRip.x264.BOKUTOX.YIFY/This Is 40 UNRATED (2012)/This.Is.40.UNRATED.2012.720p.BrRip.x264.BOKUTOX.YIFY.mp4
+ 2018-11-29 23:03:13 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:22 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E10.Captain.Latvia.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:22 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:22 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E11E12.The.Fugitive.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:22 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:23 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E18.Chasing.Amy.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:23 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:23 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E06.Monster.in.the.Closet.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:23 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:23 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E01.Coral.Palms.(1).720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:24 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:24 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E02.Coral.Palms.(2).720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:24 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:24 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E21.The.Bank.Job.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:24 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:24 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E17.Cop-Con.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:25 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:25 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E15.The.Last.Ride.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:25 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:25 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E05.Halloween.IV.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:25 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:25 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E19.Your.Honor.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:26 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:26 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E22.Crime.and.Punishment.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:26 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:26 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E20.The.Slaughterhouse.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:26 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:26 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E16.Moo.Moo.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:27 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:27 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E07.Mr.Santiago.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:27 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:27 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E09.The.Overmining.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:28 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:28 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E13.The.Audit.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:28 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:28 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E03.Coral.Palms.(3).720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:28 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:28 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E04.The.Night.Shift.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:29 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:29 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E08.Skyfire.Cycle.720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:29 INFO  - BROOKLYN NINE NINE Is a TV show
+ 2018-11-29 23:03:29 INFO  - Copied Brooklyn Nine Nine to /home/sbf/nas/Torrent/Television/Brooklyn Nine Nine/Brooklyn.Nine-Nine.Season.4.Complete.720p.WEB.x264-[MULVAcoded]/Brooklyn.Nine.Nine.S04E14.Serve.and.Protect720p.WEB.x264-[MULVAcoded].mp4
+ 2018-11-29 23:03:29 INFO  - --------------------
  
