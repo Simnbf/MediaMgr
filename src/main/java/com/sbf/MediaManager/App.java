@@ -64,9 +64,8 @@ public class App {
 			}
 			// See if we're allowed to carry on
 			boolean carryon = continueWork(filesFound);
-			carryon = true;
 			if (!carryon) {
-				LOG.info("Processing override found, ending.");
+				LOG.info("Execution control found, ending.");
 				LOG.info("--------------------");
 				return;
 			}
