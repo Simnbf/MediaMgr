@@ -1,0 +1,174 @@
+2018-12-09 15:00:15 INFO  - --------------------
+ 2018-12-09 15:00:15 INFO  - Starting up.
+ 2018-12-09 15:00:15 INFO  - Reading parms.txt file
+ 2018-12-09 15:00:15 INFO  - Successfully ping'd NAS
+ 2018-12-09 15:00:15 INFO  - Processing override found, ending.
+ 2018-12-09 15:00:15 INFO  - --------------------
+ 2018-12-09 15:00:39 INFO  - --------------------
+ 2018-12-09 15:00:39 INFO  - Starting up.
+ 2018-12-09 15:00:39 INFO  - Reading parms.txt file
+ 2018-12-09 15:00:39 INFO  - Successfully ping'd NAS
+ 2018-12-09 15:00:39 INFO  - Processing override found, ending.
+ 2018-12-09 15:00:39 INFO  - --------------------
+ 2018-12-09 15:34:22 INFO  - --------------------
+ 2018-12-09 15:34:22 INFO  - Starting up.
+ 2018-12-09 15:34:22 INFO  - Reading parms.txt file
+ 2018-12-09 15:34:23 INFO  - Successfully ping'd NAS
+ 2018-12-09 15:34:25 INFO  - AhaShare.com.txt Is not a media file
+ 2018-12-09 15:34:25 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file
+ 2018-12-09 15:34:25 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file
+ 2018-12-09 15:34:25 INFO  - AhaShare.com.txt Is not a media file
+ 2018-12-09 15:34:25 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file
+ 2018-12-09 15:34:25 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file
+ 2018-12-09 15:34:55 INFO  - --------------------
+ 2018-12-09 15:34:55 INFO  - Starting up.
+ 2018-12-09 15:34:55 INFO  - Reading parms.txt file
+ 2018-12-09 15:34:56 INFO  - Successfully ping'd NAS
+ 2018-12-09 15:34:58 INFO  - AhaShare.com.txt Is not a media file
+ 2018-12-09 15:34:58 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file
+ 2018-12-09 15:34:58 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file
+ 2018-12-09 15:34:58 INFO  - AhaShare.com.txt Is not a media file
+ 2018-12-09 15:34:58 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file
+ 2018-12-09 15:34:58 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file
+ 2018-12-09 15:35:38 INFO  - --------------------
+ 2018-12-09 15:35:38 INFO  - Starting up.
+ 2018-12-09 15:35:38 INFO  - Reading parms.txt file
+ 2018-12-09 15:35:39 INFO  - Successfully ping'd NAS
+ 2018-12-09 15:35:40 INFO  - AhaShare.com.txt Is not a media file
+ 2018-12-09 15:35:40 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file
+ 2018-12-09 15:35:40 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file
+ 2018-12-09 15:35:40 INFO  - AhaShare.com.txt Is not a media file
+ 2018-12-09 15:35:40 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file
+ 2018-12-09 15:35:40 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file
+ 2018-12-09 15:36:09 INFO  - Defaulting .DS_STORE to a movie
+ 2018-12-09 15:36:11 INFO  - Defaulting .DS_STORE to a movie
+ 2018-12-09 15:36:12 INFO  - File in landing area already exists in target - should delete in future
+ 2018-12-09 15:36:12 ERROR - FileExistsException
+ 2018-12-09 15:36:17 INFO  - Copied  to /home/sbf/nas/Torrent/Movies/.DS_Store
+ 2018-12-09 15:36:20 INFO  - Defaulting ._.DS_STORE to a movie
+ 2018-12-09 15:36:21 INFO  - Defaulting ._.DS_STORE to a movie
+ 2018-12-09 15:36:22 INFO  - File in landing area already exists in target - should delete in future
+ 2018-12-09 15:36:22 ERROR - FileExistsException
+ 2018-12-09 15:36:22 INFO  - Copied ._ to /home/sbf/nas/Torrent/Movies/._/._.DS_Store
+ 2018-12-09 15:36:23 INFO  - Downloaded from www.ETTV.tv .txt Is not a media file
+ 2018-12-09 15:36:31 INFO  - Defaulting SOUTH.PARK.S22E09.WEBRIP.X264-PBS[ETTV].MKV to a movie
+ 2018-12-09 15:36:33 INFO  - Defaulting SOUTH.PARK.S22E09.WEBRIP.X264-PBS[ETTV].MKV to a movie
+ 2018-12-09 15:37:18 INFO  - Copied South.Park.S22E09.WEBRip.x264-PBS[ettv] to /home/sbf/nas/Torrent/Movies/South.Park.S22E09.WEBRip.x264-PBS[ettv]/South.Park.S22E09.WEBRip.x264-PBS[ettv]/South.Park.S22E09.WEBRip.x264-PBS[ettv]/South.Park.S22E09.WEBRip.x264-PBS[ettv].mkv
+ 2018-12-09 15:37:19 INFO  - Downloaded from www.ETTV.tv .txt Is not a media file
+ 2018-12-09 15:37:19 INFO  - Downloaded from www.ETTV.tv .txt Is not a media file
+ 2018-12-09 15:37:19 INFO  - _mmon.txt Is not a media file
+ 2018-12-09 15:37:19 INFO  - --------------------
+ 2018-12-09 15:38:18 INFO  - --------------------
+ 2018-12-09 15:38:18 INFO  - Starting up.
+ 2018-12-09 15:38:18 INFO  - Reading parms.txt file
+ 2018-12-09 15:38:20 INFO  - Successfully ping'd NAS
+ 2018-12-09 15:38:21 INFO  - AhaShare.com.txt Is not a media file
+ 2018-12-09 15:38:21 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file
+ 2018-12-09 15:38:21 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file
+ 2018-12-09 15:38:21 INFO  - AhaShare.com.txt Is not a media file
+ 2018-12-09 15:38:21 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file
+ 2018-12-09 15:38:21 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file
+ 2018-12-09 15:38:24 INFO  - Defaulting .DS_STORE to a movie
+ 2018-12-09 15:38:25 INFO  - Defaulting .DS_STORE to a movie
+ 2018-12-09 15:38:26 INFO  - Defaulting .DS_STORE to a movie
+ 2018-12-09 15:38:27 INFO  - Copied  to /home/sbf/nas/Torrent/Movies/.DS_Store
+ 2018-12-09 15:38:29 INFO  - Defaulting ._.DS_STORE to a movie
+ 2018-12-09 15:38:30 INFO  - Defaulting ._.DS_STORE to a movie
+ 2018-12-09 15:38:31 INFO  - Defaulting ._.DS_STORE to a movie
+ 2018-12-09 15:38:33 INFO  - Copied ._ to /home/sbf/nas/Torrent/Movies/._/._.DS_Store
+ 2018-12-09 15:38:34 INFO  - Downloaded from www.ETTV.tv .txt Is not a media file
+ 2018-12-09 15:38:38 INFO  - Defaulting SOUTH.PARK.S22E09.WEBRIP.X264-PBS[ETTV].MKV to a movie
+ 2018-12-09 15:38:47 INFO  - Defaulting SOUTH.PARK.S22E09.WEBRIP.X264-PBS[ETTV].MKV to a movie
+ 2018-12-09 15:38:55 INFO  - SOUTH PARK Is a TV show
+ 2018-12-09 15:39:06 INFO  - Copied South.Park.S22E09.WEBRip.x264-PBS[ettv] to /home/sbf/nas/Torrent/Television/South.Park.S22E09.WEBRip.x264-PBS[ettv]/South.Park.S22E09.WEBRip.x264-PBS[ettv]/South.Park.S22E09.WEBRip.x264-PBS[ettv]/South.Park.S22E09.WEBRip.x264-PBS[ettv].mkv
+ 2018-12-09 15:39:08 INFO  - Downloaded from www.ETTV.tv .txt Is not a media file
+ 2018-12-09 15:39:08 INFO  - Downloaded from www.ETTV.tv .txt Is not a media file
+ 2018-12-09 15:39:08 INFO  - _mmon.txt Is not a media file
+ 2018-12-09 15:39:08 INFO  - --------------------
+ 2018-12-09 15:40:17 INFO  - --------------------
+ 2018-12-09 15:40:17 INFO  - Starting up.
+ 2018-12-09 15:40:17 INFO  - Reading parms.txt file
+ 2018-12-09 15:40:18 INFO  - Successfully ping'd NAS
+ 2018-12-09 15:40:27 INFO  - AhaShare.com.txt Is not a media file
+ 2018-12-09 15:40:36 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file
+ 2018-12-09 15:40:38 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file
+ 2018-12-09 15:40:45 INFO  - AhaShare.com.txt Is not a media file
+ 2018-12-09 15:40:46 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file
+ 2018-12-09 15:40:47 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file
+ 2018-12-09 15:41:32 INFO  - --------------------
+ 2018-12-09 15:41:32 INFO  - Starting up.
+ 2018-12-09 15:41:32 INFO  - Reading parms.txt file
+ 2018-12-09 15:41:32 INFO  - Successfully ping'd NAS
+ 2018-12-09 15:41:32 INFO  - AhaShare.com.txt Is not a media file
+ 2018-12-09 15:41:32 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file
+ 2018-12-09 15:41:32 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file
+ 2018-12-09 15:41:32 INFO  - AhaShare.com.txt Is not a media file
+ 2018-12-09 15:41:32 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file
+ 2018-12-09 15:41:32 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file
+ 2018-12-09 15:41:32 INFO  - .DS_Store Is not a media file
+ 2018-12-09 15:41:32 INFO  - ._.DS_Store Is not a media file
+ 2018-12-09 15:41:32 INFO  - Downloaded from www.ETTV.tv .txt Is not a media file
+ 2018-12-09 15:41:32 INFO  - Defaulting SOUTH.PARK.S22E09.WEBRIP.X264-PBS[ETTV].MKV to a movie
+ 2018-12-09 15:41:32 INFO  - Defaulting SOUTH.PARK.S22E09.WEBRIP.X264-PBS[ETTV].MKV to a movie
+ 2018-12-09 15:41:33 INFO  - SOUTH PARK Is a TV show
+ 2018-12-09 15:41:36 INFO  - Copied South.Park.S22E09.WEBRip.x264-PBS[ettv] to /home/sbf/nas/Torrent/Television/South.Park.S22E09.WEBRip.x264-PBS[ettv]/South.Park.S22E09.WEBRip.x264-PBS[ettv]/South.Park.S22E09.WEBRip.x264-PBS[ettv]/South.Park.S22E09.WEBRip.x264-PBS[ettv].mkv
+ 2018-12-09 15:41:36 INFO  - Downloaded from www.ETTV.tv .txt Is not a media file
+ 2018-12-09 15:41:36 INFO  - Downloaded from www.ETTV.tv .txt Is not a media file
+ 2018-12-09 15:41:36 INFO  - _mmon.txt Is not a media file
+ 2018-12-09 15:41:36 INFO  - --------------------
+ 2018-12-09 15:44:44 INFO  - --------------------
+ 2018-12-09 15:44:44 INFO  - Starting up.
+ 2018-12-09 15:44:44 INFO  - Reading parms.txt file
+ 2018-12-09 15:44:45 INFO  - Successfully ping'd NAS
+ 2018-12-09 15:44:58 INFO  - AhaShare.com.txt Is not a media file, deleting
+ 2018-12-09 15:45:05 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file, deleting
+ 2018-12-09 15:46:28 INFO  - --------------------
+ 2018-12-09 15:46:28 INFO  - Starting up.
+ 2018-12-09 15:46:28 INFO  - Reading parms.txt file
+ 2018-12-09 15:46:29 INFO  - Successfully ping'd NAS
+ 2018-12-09 15:46:36 INFO  - AhaShare.com.txt Is not a media file, deleting
+ 2018-12-09 15:46:41 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file, deleting
+ 2018-12-09 15:46:42 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file, deleting
+ 2018-12-09 15:46:44 INFO  - AhaShare.com.txt Is not a media file, deleting
+ 2018-12-09 15:46:45 INFO  - Torrent downloaded from Demonoid.com - Copy.txt Is not a media file, deleting
+ 2018-12-09 15:46:45 INFO  - Torrent Downloaded From ExtraTorrent.com.txt Is not a media file, deleting
+ 2018-12-09 15:46:46 INFO  - .DS_Store Is not a media file, deleting
+ 2018-12-09 15:46:47 INFO  - ._.DS_Store Is not a media file, deleting
+ 2018-12-09 15:46:48 INFO  - Downloaded from www.ETTV.tv .txt Is not a media file, deleting
+ 2018-12-09 15:46:49 INFO  - Downloaded from www.ETTV.tv .txt Is not a media file, deleting
+ 2018-12-09 15:46:50 INFO  - Downloaded from www.ETTV.tv .txt Is not a media file, deleting
+ 2018-12-09 15:46:51 INFO  - _mmon.txt Is not a media file, deleting
+ 2018-12-09 15:51:48 INFO  - --------------------
+ 2018-12-09 15:51:48 INFO  - Starting up.
+ 2018-12-09 15:51:48 INFO  - Reading parms.txt file
+ 2018-12-09 15:51:49 INFO  - Successfully ping'd NAS
+ 2018-12-09 15:52:54 INFO  - --------------------
+ 2018-12-09 17:41:53 INFO  - --------------------
+ 2018-12-09 17:41:53 INFO  - Starting up.
+ 2018-12-09 17:41:53 INFO  - Reading parms.txt file
+ 2018-12-09 17:41:53 INFO  - Successfully ping'd NAS
+ 2018-12-09 17:41:53 INFO  - --------------------
+ 2018-12-09 17:42:18 INFO  - --------------------
+ 2018-12-09 17:42:18 INFO  - Starting up.
+ 2018-12-09 17:42:18 INFO  - Reading parms.txt file
+ 2018-12-09 17:42:20 INFO  - Successfully ping'd NAS
+ 2018-12-09 17:42:54 INFO  - --------------------
+ 2018-12-09 17:43:11 INFO  - --------------------
+ 2018-12-09 17:43:11 INFO  - Starting up.
+ 2018-12-09 17:43:11 INFO  - Reading parms.txt file
+ 2018-12-09 17:43:11 INFO  - Successfully ping'd NAS
+ 2018-12-09 17:43:11 INFO  - Processing override found, ending.
+ 2018-12-09 17:43:11 INFO  - --------------------
+ 2018-12-09 17:56:54 INFO  - --------------------
+ 2018-12-09 17:56:54 INFO  - Starting up.
+ 2018-12-09 17:56:54 INFO  - Reading parms.txt file
+ 2018-12-09 17:56:54 INFO  - Successfully ping'd NAS
+ 2018-12-09 17:57:12 INFO  - Processing override found, ending.
+ 2018-12-09 17:57:13 INFO  - --------------------
+ 2018-12-09 17:57:44 INFO  - --------------------
+ 2018-12-09 17:57:44 INFO  - Starting up.
+ 2018-12-09 17:57:44 INFO  - Reading parms.txt file
+ 2018-12-09 17:58:39 INFO  - Successfully ping'd NAS
+ 2018-12-09 22:46:17 INFO  - --------------------
+ 2018-12-09 22:46:17 INFO  - Starting up.
+ 

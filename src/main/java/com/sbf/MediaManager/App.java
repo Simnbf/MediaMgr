@@ -3,6 +3,7 @@ package com.sbf.MediaManager;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.Array;
 import java.net.InetAddress;
 import java.net.URLEncoder;
 import java.util.ArrayList;
@@ -15,16 +16,17 @@ import org.slf4j.LoggerFactory;
 public class App {
 	public static final Logger LOG = LoggerFactory.getLogger(App.class);
 	public static boolean verbose = false;
+
 	public static void main(String[] args) {
-				
+
 		try {
 			if (args[0] == "-v") {
-				verbose = true;
+				App.verbose = true;
 			}
-		} catch (ArrayIndexOutOfBoundsException e){
-			verbose = false;
+		} catch (ArrayIndexOutOfBoundsException e) {
+			App.verbose = false;
 		}
-		
+
 		String parmFile = "parms.txt";
 		List<String> parameters = new ArrayList<String>();
 		LOG.info("--------------------");
@@ -36,8 +38,8 @@ public class App {
 			parameters = GetParams.ReadParams(parmFile);
 			nasIP = parameters.get(1);
 			mountPoint = parameters.get(2);
-			landingArea = mountPoint + "/" + parameters.get(3);		
-			if (verbose) {
+			landingArea = mountPoint + "/" + parameters.get(3);
+			if (App.verbose) {
 				LOG.info("nasIP = " + nasIP);
 				LOG.info("landingArea = " + landingArea);
 			}
@@ -57,6 +59,14 @@ public class App {
 			filesFound = ListFiles.listAllFiles(landingArea);
 			if (filesFound.size() == 1) {
 				LOG.info("No files in " + landingArea + " - ending.");
+				LOG.info("--------------------");
+				return;
+			}
+			// See if we're allowed to carry on
+			boolean carryon = continueWork(filesFound);
+			carryon = true;
+			if (!carryon) {
+				LOG.info("Processing override found, ending.");
 				LOG.info("--------------------");
 				return;
 			}
@@ -92,7 +102,17 @@ public class App {
 		case ".dat":
 		case ".info":
 		case ".parts":
-			LOG.info(titlename + " Is not a media file");
+		case ".jpeg":
+		case ".gif":
+		case ".html":
+		case ".DS_Store":
+			LOG.info(titlename + " Is not a media file, deleting");
+			try {
+				FileUtils.forceDelete(workingFile);
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 			return mediaType;
 		default:
 			break;
@@ -107,8 +127,14 @@ public class App {
 		// TV shows almost always contain an S0xE0x qualifier, check for that and
 		// substring up to it
 		titlename = titlename.toUpperCase();
-		if (titlename.contains("S0")) {
-			titlename = titlename.substring(0, titlename.indexOf("S0")).replace(".", " ").trim();
+		int maxIndex = 3;
+		String[] season = new String[maxIndex ];
+		season[0] = "S0";
+		season[1] = "S1";
+		season[2] = "S2";
+		for (int index = 0; index < maxIndex ; index++) {
+			if (titlename.contains(season[index])) {
+				titlename = titlename.substring(0, titlename.indexOf(season[index])).replace(".", " ").trim();
 			try {
 				titlename = URLEncoder.encode(titlename, "UTF-8");
 			} catch (UnsupportedEncodingException e) {
@@ -134,6 +160,7 @@ public class App {
 			 */
 			LOG.info("Defaulting " + titlename + " to a movie");
 			mediaType = 5;
+			}
 		}
 		return mediaType;
 	}
@@ -156,7 +183,6 @@ public class App {
 
 		File target = new File(file2Copy.replace(baseFrom, targetDir));
 
-		
 		try {
 			FileUtils.moveFile(inFile, target);
 		} catch (FileExistsException e) {
@@ -167,5 +193,19 @@ public class App {
 		LOG.info("Copied " + mediaName + " to " + target.toString());
 
 		return;
+	}
+
+	public static boolean continueWork(List filesFound) {
+		boolean OktoContinue = false;
+		for (int index = 0; index < filesFound.size(); index++) {
+			String a = filesFound.get(index).toString();
+			if (a.contains("_mm")) {
+				if (a.contains("on")) {
+					OktoContinue = true;
+				}
+				filesFound.remove(index);
+			}
+		}
+		return OktoContinue;
 	}
 }

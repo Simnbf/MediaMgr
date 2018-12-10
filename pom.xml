@@ -3,8 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.sbf</groupId>
-	<artifactId>MediaManager</artifactId>
-	<version>1.0.0</version>
+	<artifactId>mmgr</artifactId>
+	<version>1.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>MediaManager</name>
