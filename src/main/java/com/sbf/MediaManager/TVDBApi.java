@@ -14,29 +14,29 @@ import java.net.URLDecoder;
 import javax.net.ssl.HttpsURLConnection;
 
 import org.json.JSONObject;
+import org.json.JSONArray;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class TVDBApi {
 	public static final Logger LOG = LoggerFactory.getLogger(TVDBApi.class);
 
-	public static boolean searchShows(String searchTitle) throws IOException {
+	public static String searchShows(String searchTitle) throws IOException {
 
 		URL url = null;
+		String seriesName = "not found";
 		try {
 			url = new URL("https://api.thetvdb.com/search/series?name=" + searchTitle);
 		} catch (MalformedURLException e1) {
-			e1.printStackTrace();
-			return false;
+			LOG.error(e1.toString()); 
+			return seriesName;
 		}
 		String jwt = "";
-
 		try {
 			jwt = getJWTToken();
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
-
 		HttpsURLConnection con;
 //		LOG.info(url.toString());
 		con = (HttpsURLConnection) url.openConnection();
@@ -45,26 +45,35 @@ public class TVDBApi {
 		con.setRequestProperty("Authorization", bearer);
 		con.setRequestProperty("content-type", "application/json");
 		int httpStatus = con.getResponseCode();
-
 		if (httpStatus == 200) {
 			if (App.verbose) {
 				LOG.info(searchTitle + " Found on TVDB");
 			}
-			con.disconnect();
-			return true;
-			
+			StringBuilder sb = new StringBuilder();
+			try (BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream()))) {
+				String postPayload;
+				while ((postPayload = br.readLine()) != null) {
+					sb.append(postPayload + "\n");
+				}		
+				JSONObject outData = new JSONObject(sb.toString());
+				JSONArray js = (JSONArray) outData.get("data");
+				if (js.length() > 0) {
+					outData = js.getJSONObject(0);
+					seriesName = (String) outData.get("seriesName");
+				}
+				con.disconnect();
+			}
 		}
 		if (httpStatus == 404) {
 			searchTitle = URLDecoder.decode(searchTitle, "UTF-8");
 			LOG.info(searchTitle + " Not found on TVDB");
 			con.disconnect();
-			return false;
 		}
-		// if (httpStatus < 200 && httpStatus > 300) {
-		LOG.info("Bad HTTP Status on TVDB GET API: " + httpStatus + " " + con.getResponseMessage());
-		con.disconnect();
-		return false;
-
+		if (httpStatus < 200 && httpStatus > 300) {
+			LOG.error("Bad HTTP Status on TVDB GET API: " + httpStatus + " " + con.getResponseMessage());
+			con.disconnect();
+		}
+		return seriesName;
 	}
 
 	public static String getJWTToken() throws IOException {

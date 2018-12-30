@@ -1,0 +1,8 @@
+{	"_comment":"This is the control file for MediaManager. Change nasMountPoint depending on execution environment!",
+	"nasIP":"192.168.1.102",
+	"nasMountPoint":"Z:/test",
+	"landingArea":"LandingArea",
+	"tvDir":"Torrent/sbfTV",
+	"mvDir":"Torrent/sbfMovie",
+	"unknown":"Torrent/unknown"
+}
